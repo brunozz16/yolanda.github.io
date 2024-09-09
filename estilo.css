@@ -19,28 +19,25 @@ body{
 }
 .container{
 	width: 90%;
-	margin: 5%;
 	padding: 30px;
 	border: 1px solid #eeeeee;
 	border-radius: 20px;
-	background: linear-gradient(to right, #FF5020, #FF7E10, #FFA311, #FFB411);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
+	margin:5%;
+	background: linear-gradient(to right, #FF5020, #FF7E10, #FFA311, #FFB411)
 }
 h4,h5{
 	margin-bottom: 10px;
 	font-size: 24px;
 	color: white;
-	margin: 1 auto;
-	font-family: 'Inter', sans-serif;
-	text-align: center;
+	margin-left:22%;
 }
 h4{
 	font-size:35px;
-	font-family: 'Inter', sans-serif;
-	
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left:12%;
+}
+h5{
+	margin-left:15%;
 }
 .titulo{
 	font-family: 'Times New Roman', Times, serif;
@@ -50,12 +47,10 @@ h4{
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 10px;
-	border-radius: 5px;
 }
 textarea{
 	width: 100%;
 	padding: 10px;
-	border-radius: 5px;
 }
 #submit{
 	border: none;
@@ -64,7 +59,6 @@ textarea{
 	width: 200px;
 	margin-top: 10px;
 	border-radius: 5px;
-	padding: 6px;
 }
 #submit:hover{
 	background-color: #333333;
@@ -102,5 +96,5 @@ textarea{
 .close:hover,.close:focus {
 	color: black;
 	text-decoration: none;
-	cursor: pointer;
+	cursor: pointer;
 }
