@@ -45,6 +45,7 @@ h4{
 .titulo{
 	font-family: 'Times New Roman', Times, serif;
 	color:white;
+	
 }
 .DNI{
 	width: 100%;
@@ -104,3 +105,18 @@ textarea{
 	text-decoration: none;
 	cursor: pointer;
 }
+input[type="radio"] {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 2px solid #ccc;
+	
+  }
+  
+  input[type="radio"]:checked {
+	background-color: #00ff22;
+	border: 2px solid #000000;
+  }
