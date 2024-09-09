@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,9 +6,9 @@
 </head>
 <body>
 	<div class="container">
-		<form method="post" action="https://script.google.com/macros/s/AKfycbzRy_McMnOBLKauYQdXHQtWeYX7Ecz60lQ81GOQC5Um4t0dPZVDZEjOOeZoFHSBNwVi/exec" name="contact-form">
-			<h4>Registrar Asistencia</h4>
-			<input class="DNI" type="text" maxlength="8" name="DNI" placeholder="DNI" required required pattern="\d{1,8}" inputmode="numeric">
+		<form id="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbzRy_McMnOBLKauYQdXHQtWeYX7Ecz60lQ81GOQC5Um4t0dPZVDZEjOOeZoFHSBNwVi/exec" name="contact-form">
+			<h1>Registrar Asistencia</h1>
+			<input class="DNI" type="text" maxlength="8" name="DNI" placeholder="DNI" required pattern="\d{1,8}" inputmode="numeric">
             <center> <div class="separador"></div> </center>
             <div class="titulo">
                 <h5>Contenidos Desarrollados</h5>
@@ -29,7 +30,7 @@
             </div>
             <center> <div class="separador"></div> </center>
             <div class="titulo">
-                <h5>Metolología y actividades propuestas</h5>
+                <h5>Metodología y actividades propuestas</h5>
                 <div> <input type="radio" id="p2-o1" name="Pregunta 2" value="Excelente" checked /> Excelente </div>
                 <div>
                     <input type="radio" id="p2-o2" name="Pregunta 2" value="Muy bueno"/> Muy bueno 
@@ -80,12 +81,21 @@
             </div>
             <center> <div class="separador"></div> </center>
             <h5>¿Hay alguna sugerencia de mejora que desees compartir? </h5>
-			<textarea name="Sugerencia" rows="7" placeholder="Sugerencia"> </textarea>
+			<textarea name="Sugerencia" rows="7" placeholder="Sugerencia"></textarea>
 			<div class="submit"><input type="submit" value="Submit" id="submit"></div>
             
 		</form>
 	</div>
 
     <script src="Google Sheet.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            alert("Asistencia enviada");
+            setTimeout(function() {
+                window.location.href = "https://www.google.com/?hl=es"; // Redirige a una página de agradecimiento
+                window.close(); // Intenta cerrar la ventana después de la redirección
+            }, 100); // Espera 100 ms antes de redirigir y cerrar la ventana
+        });
+    </script>
 </body>
 </html>
