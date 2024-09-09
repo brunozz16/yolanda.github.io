@@ -7,14 +7,85 @@
 	<div class="container">
 		<form method="post" action="https://script.google.com/macros/s/AKfycbzRy_McMnOBLKauYQdXHQtWeYX7Ecz60lQ81GOQC5Um4t0dPZVDZEjOOeZoFHSBNwVi/exec" name="contact-form">
 			<h4>Registrar Asistencia</h4>
-			<input type="text" name="Nombre" placeholder="Nombre">
-			<input type="text" name="Apellido" placeholder="Apellido">
-			<input type="email" name="Email" placeholder="Email">
-			<textarea name="Opinion" rows="7" placeholder="Opinion"></textarea>
-			<input type="submit" value="Submit" id="submit">
+			<input class="DNI" type="number" name="DNI" placeholder="DNI" maxlength="8" minlength="7">
+            <center> <div class="separador"></div> </center>
+            <div class="titulo">
+                <h5>Contenidos Desarrollados</h5>
+                <div> 
+                    <input type="radio" id="p1-o1" name="Pregunta 1" value="Excelente" checked /> Excelente 
+                </div>
+                <div>
+                    <input type="radio" id="p1-o2" name="Pregunta 1" value="Muy bueno"/> Muy bueno 
+                </div>
+                <div>
+                    <input type="radio" id="p1-o3" name="Pregunta 1" value="Bueno"/> Bueno
+                </div>
+                <div>
+                    <input type="radio" id="p1-o4" name="Pregunta 1" value="Regular"/> Regular
+                </div>
+                <div>
+                    <input type="radio" id="p1-o5" name="Pregunta 1" value="Malo"/> Malo
+                </div>        
+            </div>
+            <center> <div class="separador"></div> </center>
+            <div class="titulo">
+                <h5>Metolología y actividades propuestas</h5>
+                <div> <input type="radio" id="p2-o1" name="Pregunta 2" value="Excelente" checked /> Excelente </div>
+                <div>
+                    <input type="radio" id="p2-o2" name="Pregunta 2" value="Muy bueno"/> Muy bueno 
+                </div>
+                <div>
+                    <input type="radio" id="p2-o3" name="Pregunta 2" value="Bueno"/> Bueno
+                </div>
+                <div><input type="radio" id="p2-o4" name="Pregunta 2" value="Regular"/> Regular</div>
+                <div><input type="radio" id="p2-o5" name="Pregunta 2" value="Malo"/> Malo</div>        
+            </div>
+            <center> <div class="separador"></div> </center>
+            <div class="titulo">
+                <h5>Desempeño de facilitadores</h5>
+                <div> 
+                    <input type="radio" id="p3-o1" name="Pregunta 3" value="Excelente" checked/> Excelente 
+                </div>
+                <div>
+                    <input type="radio" id="p3-o2" name="Pregunta 3" value="Muy bueno" /> Muy bueno 
+                </div>
+                <div>
+                    <input type="radio" id="p3-o3" name="Pregunta 3" value="Bueno" /> Bueno
+                </div>
+                <div>
+                    <input type="radio" id="p3-o4" name="Pregunta 3" value="Regular" /> Regular
+                </div>
+                <div>
+                    <input type="radio" id="p3-o5" name="Pregunta 3" value="Malo" /> Malo
+                </div>        
+            </div>
+            <center> <div class="separador"></div> </center>
+            <div class="titulo">
+                <h5>¿Cómo valorarías este encuentro en general?</h5>
+                <div> 
+                    <input type="radio" id="p4-o1" name="Pregunta 4" value="Excelente" checked /> Excelente 
+                </div>
+                <div>
+                    <input type="radio" id="p4-o2" name="Pregunta 4" value="Muy bueno" /> Muy bueno 
+                </div>
+                <div>
+                    <input type="radio" id="p4-o3" name="Pregunta 4" value="Bueno" /> Bueno
+                </div>
+                <div>
+                    <input type="radio" id="p4-o4" name="Pregunta 4" value="Regular" /> Regular
+                </div>
+                <div>
+                    <input type="radio" id="p4-o5" name="Pregunta 4" value="Malo" /> Malo
+                </div>        
+            </div>
+            <center> <div class="separador"></div> </center>
+            <h5>¿Hay alguna sugerencia de mejora que desees compartir? </h5>
+			<textarea name="Sugerencia" rows="7" placeholder="Sugerencia"> </textarea>
+			<div class="submit"><input type="submit" value="ENVIAR" id="submit"></div>
+            
 		</form>
 	</div>
 
-	<script src="Google Sheet.js"></script>
+    <script src="Google Sheet.js"></script>
 </body>
 </html>
